@@ -1,0 +1,6 @@
+#!/bin/bash
+
+for i in $@
+do
+    tree $HOME/tags/ | egrep $i
+done

@@ -1,0 +1,9 @@
+#!/bin/bash
+
+#Script qui met un tag sur chaque fichier envoyé en paramétre et créer un lien dans /tag 
+tag=$1;
+shift;
+
+mkdir -p $HOME/tags/$tag
+ln -f $@ $HOME/tags/$tag/
+
